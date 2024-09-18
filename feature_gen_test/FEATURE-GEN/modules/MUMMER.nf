@@ -3,8 +3,7 @@ process MUMMER {
     container 'mblanche/mummer4:latest'
 
     input:
-        file(ref)
-        tuple val(sample), file(fasta)
+        tuple val(sample), file(fasta), file(ref)
     output:
         path("./mummer_${sample}"), emit: amrfinder_results
 
