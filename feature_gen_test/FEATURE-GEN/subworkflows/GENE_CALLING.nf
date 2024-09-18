@@ -17,7 +17,7 @@ workflow GENE_CALLING {
 
         PROKKA_TEST_SET(ch_genomes)
 
-        PROKKA_REF_SET(ch_ref)
+        PROKKA_REF_SET(ch_ref.first())
 
     //emit:
 
