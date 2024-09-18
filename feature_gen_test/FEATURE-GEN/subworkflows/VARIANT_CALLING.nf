@@ -1,5 +1,5 @@
 /*
-Subworkflow for doanloading of mutiple AMR databases
+Subworkflow for calling variants between test genomes and a reference genomes
 
 
 */

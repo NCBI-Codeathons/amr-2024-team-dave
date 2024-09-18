@@ -5,7 +5,7 @@ Importing subworkflows
 */
 
 include { VARIANT_CALLING as VARIANT_CALLING } from '../subworkflows/VARIANT_CALLING.nf'
-
+include { GENE_CALLING as GENE_CALLING } from '../subworkflows/VARIANT_CALLING.nf'
 
 
 
@@ -27,5 +27,7 @@ workflow GENERATE_FEATURES {
 
 
     VARIANT_CALLING(ch_ref, ch_genomes)
+
+    GENE_CALLING(ch_ref, ch_genomes)
 
 }
