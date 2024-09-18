@@ -11,8 +11,8 @@ include { GENE_CALLING as GENE_CALLING } from '../subworkflows/GENE_CALLING.nf'
 
 workflow GENERATE_FEATURES {
     take:
-        ch_ref         //    channel: [fasta]
-        ch_genomes        //    channel: (sample, fasta)
+        ch_genomes         //    channel: [fasta]
+        ch_ref        //    channel: (sample, fasta)
 
     main:
 
