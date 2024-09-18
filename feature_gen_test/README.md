@@ -4,8 +4,10 @@
 
 Running the Pipeline
 
+> A sample sheet need to be created as seen in the example. Project name can be anything (no spaces or special charcters other then '_').
+
 ```bash
- nextflow run ./FEATURE-GEN/ -c {config file}
+ nextflow run ./FEATURE-GEN/ -c {config file} --project_name {project_name} --sample_sheet {/path/to/samplesheet.csv}
 ```
 
 ## SNPs
