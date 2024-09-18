@@ -11,7 +11,7 @@ if (params.workflow_opt == 'genearte_features') {
 
     ch_ref = Channel.fromPath(params.sample_sheet) \
         | splitCsv(header:true) \
-        | map { row-> tuple(row.sample, file(row.refernce)) }
+        | map { row-> tuple(row.sample, file(row.reference)) }
 
     }
 
