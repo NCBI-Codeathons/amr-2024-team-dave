@@ -10,7 +10,7 @@ Running the Pipeline
 
 ## SNPs
 
-> SNP Results can be found in the output folder {project_name}/GENERATE_FEATURES/VARIANT_CALLING/MUMMER/mummer_{sample_name}/out.snps . Currently the project_name is First_FeatureGen_Test. This SNP data is generated using [Mummers](https://github.com/mummer4/mummer) dnadiff workflow. This workflow does much more than just align genomes and call snps and might be usefull for other features(?).
+> SNP Results can be found in the output folder {project_name}/GENERATE_FEATURES/VARIANT_CALLING/MUMMER/mummer_{sample_name}/out.snps . Currently the project_name is First_FeatureGen_Test. This SNP data is generated using [Mummers](https://github.com/mummer4/mummer) dnadiff workflow. This workflow does much more than just align genomes and call snps and might be usefull for other features(?). To process the 4 test genomes it took less than 2 minutes.
 
 ## Gene Calling
 
