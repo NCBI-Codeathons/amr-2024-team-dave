@@ -4,13 +4,15 @@
 
 Running the Pipeline
 
+> A sample sheet need to be created as seen in the example. Project name can be anything (no spaces or special charcters other then '_').
+
 ```bash
- nextflow run ./FEATURE-GEN/ -c {config file}
+ nextflow run ./FEATURE-GEN/ -c {config file} --project_name {project_name} --sample_sheet {/path/to/samplesheet.csv}
 ```
 
 ## SNPs
 
-> SNP Results can be found in the output folder {project_name}/GENERATE_FEATURES/VARIANT_CALLING/MUMMER/mummer_{sample_name}/out.snps . Currently the project_name is First_FeatureGen_Test. This SNP data is generated using [Mummers](https://github.com/mummer4/mummer) dnadiff workflow. This workflow does much more than just align genomes and call snps and might be usefull for other features(?).
+> SNP Results can be found in the output folder {project_name}/GENERATE_FEATURES/VARIANT_CALLING/MUMMER/mummer_{sample_name}/out.snps . Currently the project_name is First_FeatureGen_Test. This SNP data is generated using [Mummers](https://github.com/mummer4/mummer) dnadiff workflow. This workflow does much more than just align genomes and call snps and might be usefull for other features(?). To process the 4 test genomes it took less than 2 minutes.
 
 ## Gene Calling
 
