@@ -16,4 +16,4 @@ Running the Pipeline
 
 ## Gene Calling
 
-> Prokka is used for gene calling of every test genome as well as the reference genome. Results can be found in the output folder {project_name}/GENERATE_FEATURES/GENE_CALLING/{PROKKA_REF_SET / PROKKA_TEST_SET}/{sample_name}/ respectively. prokka is also very lightweight, finishing all 4 genomes in just a few minutes. However PROKKA generates a lot of data, and we will most likely need to pair down what files we actually need. For these 4 Genomes it generated about 256MB of data. For now I have just copied all of the data over for everyone to inspect.
+> Prokka is used for gene calling of every test genome as well as the reference genome. Results can be found in the output folder {project_name}/GENERATE_FEATURES/GENE_CALLING/{PROKKA_REF_SET / PROKKA_TEST_SET}/{sample_name}/ respectively. prokka is also very lightweight, finishing all 4 genomes in just a few minutes. However PROKKA generates a lot of data, and we will most likely need to pair down what files we actually need. For these 4 Genomes it generated about 150MB of data. For now I have just copied all of the data over for everyone to inspect.
