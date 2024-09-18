@@ -5,7 +5,7 @@ Importing subworkflows
 */
 
 include { VARIANT_CALLING as VARIANT_CALLING } from '../subworkflows/VARIANT_CALLING.nf'
-include { GENE_CALLING as GENE_CALLING } from '../subworkflows/VARIANT_CALLING.nf'
+include { GENE_CALLING as GENE_CALLING } from '../subworkflows/GENE_CALLING.nf'
 
 
 
