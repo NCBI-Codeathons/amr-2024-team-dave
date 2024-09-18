@@ -26,6 +26,6 @@ workflow GENERATE_FEATURES {
 */
 
 
-    VARIANT_CALLING(ch_ref, ch_genoems)
+    VARIANT_CALLING(ch_ref, ch_genomes)
 
 }
