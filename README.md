@@ -9,6 +9,7 @@ List of participants and affiliations:
 - Chimenya Ntweya,Queen Elizabeth Central Hospital, Blantyre, Malawi
 - Priyal Visavadiya, Gujarat Biotechnology University, Gandhinagar
 - Precious Osadebamwen, Dalhousie University, Halifax, NS
+- Mohamed A. Abouelkhair, Associate professor and founding faculty Diagnostic Medicine and Pathobiology, Rowan University New Jersey USA
 
 
 
