@@ -19,6 +19,9 @@ def get_longest_record(fasta_dict):
     longest_record = (longest_seq_id, longest_seq)
     return longest_record
 
+def concat_record(fasta_dict):
+    return ''.join(str(value) for value in fasta_dict.values())
+
 
 def check_genome_size(sequence, genome_size, skew):
     """
@@ -26,15 +29,18 @@ def check_genome_size(sequence, genome_size, skew):
     Genome_size in a float in MB.
     skew is a float representing the precentage skew
     """
+    concat_rec = concat_record(fasta_dict)
+
     bp_genome_size = genome_size * 1000000
     minsize = bp_genome_size - (bp_genome_size * skew)
     maxsize = bp_genome_size + (bp_genome_size * skew)
     print('Checking that genome size is at least ' + str(minsize) + ' and the it is less than ' + str(maxsize))
 
-    if ((len(sequence[1])) >= minsize) & ((len(sequence[1])) <= maxsize):
+    if ((len(concat_rec)) >= minsize) & ((len(concat_rec)) <= maxsize):
         return True
     else:
         return False
+
 
 def genome_import_process(fasta, genome_size, skew):
     """
@@ -44,12 +50,11 @@ def genome_import_process(fasta, genome_size, skew):
     :param skew: the percent skew of the genome size allowed
     :return: tuple of (fasta_file_name, sequence id, sequence)
     """
+
     fasta_dict = read_fasta(fasta)
 
-    longest_seq = get_longest_record(fasta_dict)
-
-    if check_genome_size(longest_seq, genome_size, skew):
+    if check_genome_size(fasta_dict, genome_size, skew):
         print('Input sequence ' + fasta + ' passed checks')
-        return fasta, longest_seq[0], longest_seq[1]
+        return fasta, fasta_dict
     else:
         print('Input sequence ' + fasta + ' did not pass checks')
