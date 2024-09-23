@@ -58,3 +58,4 @@ def genome_import_process(fasta, genome_size, skew):
         return fasta, fasta_dict
     else:
         print('Input sequence ' + fasta + ' did not pass checks')
+
