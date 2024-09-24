@@ -23,7 +23,7 @@ def concat_record(fasta_dict):
     return ''.join(str(value) for value in fasta_dict.values())
 
 
-def check_genome_size(sequence, genome_size, skew):
+def check_genome_size(fasta_dict, genome_size, skew):
     """
     This function checks the size of the provided sequences and checks if it is within a ranges provided by skew.
     Genome_size in a float in MB.
