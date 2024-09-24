@@ -1,15 +1,14 @@
 # Team Project Name
 
 List of participants and affiliations:
-- Kirtan Dave (Team Leader), Assistant Professor in Bioinformatics Research and development cell  Parul University 
-- Narges SangaraniPour, Shahid Beheshti University of medical sciences 
-- Edward Bird , Kansas State University, Interdepartmental Genetics
-- Abolhassan Bahari , High Institute for Research and Education in Transfusion Medicine
-- William Boateng , Noguchi Memorial Institute for Medical Research
-- Chimenya Ntweya,Queen Elizabeth Central Hospital, Blantyre, Malawi
-- Priyal Visavadiya, Gujarat Biotechnology University, Gandhinagar
-- Precious Osadebamwen, Dalhousie University, Halifax, NS
-- Mohamed A. Abouelkhair, Associate professor and founding faculty Diagnostic Medicine and Pathobiology, Rowan University New Jersey USA
+- Kirtan Dave , Assistant Professor in Bioinformatics, Parul University,India [Team Leader]
+- Edward Bird , Kansas State University, Interdepartmental Genetics,USA [Tech Lead]
+- Narges SangaraniPour, Shahid Beheshti University of medical sciences,Tehran, Iran [Flex,Writer]
+- Precious Osadebamwen, Dalhousie University, Halifax, NS,Canada [Writer]
+- Abolhassan Bahari , High Institute for Research and Education in Transfusion Medicine,Tehran, Iran[Team Member]
+- William Boateng , Noguchi Memorial Institute for Medical Research,Ghana [Team Member]
+- Priyal Visavadiya, Gujarat Biotechnology University, Gandhinagar,India[Team Member]
+- Mohamed A. Abouelkhair, Associate professor and founding faculty Diagnostic Medicine and Pathobiology, Rowan University New Jersey USA[Team Member]
 
 
 
