@@ -18,6 +18,7 @@ token.txt
 *.sif
 /bacerial_isolates
 /unused
+/feature_gen_lib/tmp
 
 ### Emacs ###
 # -*- mode: gitignore; -*-
