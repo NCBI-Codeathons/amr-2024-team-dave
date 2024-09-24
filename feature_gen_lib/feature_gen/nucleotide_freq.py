@@ -5,6 +5,8 @@ import os
 def space_seperated_record(fasta_dict):
     return ' '.join(str(value) for value in fasta_dict.values())
 
+def concat_record(fasta_dict):
+    return ''.join(str(value) for value in fasta_dict.values())
 
 def count_nucleotides(input_seq):
     sequence = input_seq.upper()
@@ -17,6 +19,19 @@ def count_nucleotides(input_seq):
         nucleotide_counts[nucleotide] = sequence.count(nucleotide)
 
     return nucleotide_counts
+
+def get_gc_content(fasta_dict):
+
+    single_record = concat_record(fasta_dict)
+
+    total_len = len(single_record)
+    g_content = single_record.upper().count('G') / total_len
+    c_content = single_record.upper().count('C') / total_len
+
+    gc_content = {}
+    gc_content['GC_Content'] = (g_content + c_content) / total_len
+
+    return gc_content
 
 def generate_combinations(nucleotides, X):
     return [''.join(seq) for seq in product(nucleotides, repeat=X)]
@@ -51,7 +66,7 @@ def merge_dicts(dict1, dict2, dict3, dict4):
     merged_dict = {**dict1, **dict2, **dict3, **dict4}
     return merged_dict
 
-def create_directory(dir_path):
+def create_dir(dir_path):
     """Create a directory if it does not exist."""
     try:
         os.makedirs(dir_path, exist_ok=True)  # exist_ok=True avoids raising an error if the directory already exists
@@ -68,6 +83,7 @@ def create_db(import_sequnce, output_folder):
     input_data = {}
     input_data['file'] = import_sequnce[0]
 
+    gc_content = get_gc_content(input_data)
     nuc_counts = count_nucleotides(space_seq)
     dinuc_counts = count_dinucleotides(space_seq)
     trinuc_counts = count_trinucleotides(space_seq)
