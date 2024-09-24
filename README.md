@@ -23,6 +23,8 @@ Keywords: ESKAPE pathogens, Machine learning, Genomic data, Phenotypic data, Cli
 
 
 ## Approach
+![Workflow Image](https://github.com/NCBI-Codeathons/amr-2024-team-dave/blob/main/genome/workflow_team_dave.JPG)
+
 
 ## Results
 
