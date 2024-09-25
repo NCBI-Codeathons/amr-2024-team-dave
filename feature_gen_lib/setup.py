@@ -13,6 +13,6 @@ setup(
             'feature-gen = feature_gen_lib.main:main',  # 'my-tool' is the command; main function in main.py
         ],
     },
-    install_requires={  # Optional: List of dependencies
+    install_requires={  # Optional: List of dependencies eg:Panda,sklit,Biopython
     },
 )
