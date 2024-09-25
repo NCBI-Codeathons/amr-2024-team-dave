@@ -62,8 +62,8 @@ def count_trinucleotides(input_seq):
 
     return trinucleotide_counts
 
-def merge_dicts(dict1, dict2, dict3, dict4):
-    merged_dict = {**dict1, **dict2, **dict3, **dict4}
+def merge_dicts(dict1, dict2, dict3, dict4, dict5):
+    merged_dict = {**dict1, **dict2, **dict3, **dict4, **dict5}
     return merged_dict
 
 def create_dir(dir_path):
@@ -88,7 +88,7 @@ def create_db(import_sequnce, output_folder):
     dinuc_counts = count_dinucleotides(space_seq)
     trinuc_counts = count_trinucleotides(space_seq)
 
-    data = merge_dicts(input_data, nuc_counts, dinuc_counts, trinuc_counts)
+    data = merge_dicts(input_data, gc_content, nuc_counts, dinuc_counts, trinuc_counts)
 
     nuc_freq_df = pd.DataFrame(data, index=[0])
 

@@ -7,8 +7,15 @@ def read_fasta(fasta):
     with open(fasta, "r") as fasta_file:
         fasta_dict = {}
         for record in SeqIO.parse(fasta_file, "fasta"):
-            fasta_dict[record.id] = record.seq
+            fasta_dict[record.description] = record.seq
     return fasta_dict
+
+def remove_guided_contigs(fasta_dict):
+    filter_contigs = {}
+    for seq in fasta_dict.keys():
+        if '.guided' not in seq:
+            filter_contigs[seq.split(' ')[0]] = fasta_dict[seq]
+    return filter_contigs
 
 def get_longest_record(fasta_dict):
     """
@@ -42,7 +49,7 @@ def check_genome_size(fasta_dict, genome_size, skew):
         return False
 
 
-def genome_import_process(fasta, genome_size, skew):
+def genome_import_process(fasta):
     """
     Function that imports a fasta file into a dictonary and checks its size
     :param fasta: fasta file
@@ -53,9 +60,7 @@ def genome_import_process(fasta, genome_size, skew):
 
     fasta_dict = read_fasta(fasta)
 
-    if check_genome_size(fasta_dict, genome_size, skew):
-        print('Input sequence ' + fasta + ' passed checks')
-        return fasta, fasta_dict
-    else:
-        print('Input sequence ' + fasta + ' did not pass checks')
+    filtered_contigs = remove_guided_contigs(fasta_dict)
+
+    return fasta, filtered_contigs
 

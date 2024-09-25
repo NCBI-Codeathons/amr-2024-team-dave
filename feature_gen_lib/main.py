@@ -9,11 +9,9 @@ def main():
 
     # Use the parsed arguments
     fasta_input = args.fasta
-    genome_size = args.genome_size
-    genome_skew = args.skew
-    output_dir = args.output_dir
+    output_dir = args.output
 
-    passed_fasta = genome_import_process(fasta_input, genome_size, genome_skew)
+    passed_fasta = genome_import_process(fasta_input)
     create_nucleotide_freq_db(passed_fasta, output_dir)
 
 
