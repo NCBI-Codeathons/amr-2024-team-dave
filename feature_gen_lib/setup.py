@@ -1,5 +1,11 @@
 from setuptools import setup, find_packages
 
+def parse_requirements(filename):
+    with open(filename, 'r') as file:
+        lines = file.readlines()
+        # Remove comments and empty lines
+        return [line.strip() for line in lines if line and not line.startswith("#")]
+
 setup(
     name='feature_Generation_lib',               # Name of your tool
     version='0.1',                # Version of your tool
@@ -13,6 +19,5 @@ setup(
             'feature-gen = feature_gen_lib.main:main',  # 'my-tool' is the command; main function in main.py
         ],
     },
-    install_requires={  # Optional: List of dependencies
-    },
+    install_requires=parse_requirements('requirements.txt')
 )

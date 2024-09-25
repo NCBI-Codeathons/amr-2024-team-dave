@@ -8,4 +8,4 @@ def read_protein_fasta(fasta):
         fasta_dict = {}
         for record in SeqIO.parse(fasta_file, "fasta"):
             fasta_dict[record.id] = str(record.seq)  # Convert sequence to a string if needed
-    return fasta_dict
+    return fasta, fasta_dict

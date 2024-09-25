@@ -4,8 +4,15 @@ def parse_args():
     parser = argparse.ArgumentParser(description='Methods for extracting features from genomic data')
 
     # Required arguments
-    parser.add_argument('-f', '--fasta', type=str, required=True, help='Path to FASTA file')
-    parser.add_argument('-o', '--output', type=str, required=True, help='path to ouput folder')
+    parser.add_argument('-m', '--mode', required=True, type=str, help='mode to run: choices = [ nuc_feat, pro_feat, fetch, remove_guided]')
+
+    # Optional basd on mode
+    parser.add_argument('-f', '--fasta', type=str, help='Path to nuclotide FASTA file')
+    parser.add_argument('-p', '--protein', type=str, help='Path to amino acid FASTA file from prokka')
+    parser.add_argument('-o', '--output', type=str, help='path to ouput folder')
+    parser.add_argument('-e', '--email', type=str, help='email for entrez')
+    parser.add_argument('-a', '--accession_name', type=str, help='NCBi Assembly Name')
+
 
     # Optional args
 

@@ -1,6 +1,7 @@
 from itertools import product
 from Bio import SeqUtils
 import pandas as pd
+import os
 
 def space_seperated_record(fasta_dict):
     return ' '.join(str(value) for value in fasta_dict.values())
