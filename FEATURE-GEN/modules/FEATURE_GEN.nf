@@ -44,8 +44,8 @@ process FETCH_GENOME {
     script:
 
     """
-    mkdir ${sample}_output
-    python /home/amr-2024-team-dave/feature_gen_lib/main.py -m fetch -a ${acc} -e ${params.email} -o ${sample}_output
+    mkdir output
+    python /home/amr-2024-team-dave/feature_gen_lib/main.py -m fetch -a ${acc} -e ${params.email} -o output
     """
 }
 
