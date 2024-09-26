@@ -7,7 +7,7 @@ if (params.workflow_opt == 'genearte_features') {
 
     ch_input = Channel.fromPath(params.sample_sheet) \
         | splitCsv(header:true) \
-        | map { row-> tuple(row.Sample_Name, row.target_acc) }
+        | map { row-> tuple(row.Sample_Name, row.asm_acc) }
 
     }
 

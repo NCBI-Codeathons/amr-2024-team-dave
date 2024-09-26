@@ -35,7 +35,6 @@ process PRO_FEATURES {
 process FETCH_GENOME {
     label 'ultralow'
     container 'ebird013/feature_gen:0.2'
-    errorStrategy 'ignore'
 
     input:
         tuple val(sample), val(acc)
