@@ -10,7 +10,7 @@ from feature_gen.prokka_txt_annot import parse_prokka_txt_output
 
 
 def main():
-    # Parse the arguments
+    # Step 1: Parse the command-line arguments
     args = parse_args()
 
     # parse the mode to run in
@@ -66,5 +66,6 @@ def main():
         print("Mode is invalid. Current supported modes are: nuc_feat, pro_feat, fetch")
 
 
+# Step 5: Call the 'main' function when the script is executed
 if __name__ == "__main__":
     main()

@@ -1,6 +1,7 @@
-import argparse
+import argparse  # Importing argparse to handle command-line arguments
 
 def parse_args():
+    # Create a parser object and provide a description of the tool's purpose
     parser = argparse.ArgumentParser(description='Methods for extracting features from genomic data')
 
     # Required arguments
