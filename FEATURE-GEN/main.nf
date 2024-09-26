@@ -5,13 +5,9 @@ nextflow.enable.dsl=2
 
 if (params.workflow_opt == 'genearte_features') {
 
-    ch_fasta = Channel.fromPath(params.sample_sheet) \
+    ch_input = Channel.fromPath(params.sample_sheet) \
         | splitCsv(header:true) \
-        | map { row-> tuple(row.sample, file(row.fasta)) }
-
-    ch_ref = Channel.fromPath(params.sample_sheet) \
-        | splitCsv(header:true) \
-        | map { row-> tuple(row.sample, file(row.reference)) }
+        | map { row-> tuple(row.Sample_Name, row.target_acc) }
 
     }
 
@@ -22,7 +18,7 @@ workflow {
 
     if (params.workflow_opt == 'genearte_features') {
 
-        GENERATE_FEATURES(ch_fasta, ch_ref)
+        GENERATE_FEATURES(ch_input)
 
         }
 
