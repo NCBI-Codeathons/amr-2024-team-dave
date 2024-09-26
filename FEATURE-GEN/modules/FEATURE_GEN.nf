@@ -98,6 +98,6 @@ process PROKKA_PARSE {
     script:
 
     """
-    python /home/amr-2024-team-dave/feature_gen_lib/main.py -m prokka_parse -i ${mum_out} -o ${sample}_prokka.csv
+    python /home/amr-2024-team-dave/feature_gen_lib/main.py -m prokka_parse -i ${pro_out} -o ${sample}_prokka.csv
     """
 }
