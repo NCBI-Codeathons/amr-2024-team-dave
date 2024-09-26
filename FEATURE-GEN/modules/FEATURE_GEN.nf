@@ -57,7 +57,7 @@ process REMOVE_GUIDED {
     input:
         tuple val(sample), file(fasta)
     output:
-        tuple val(sample), path("./${sample}_output/*.fasta"), emit: denovo
+        tuple val(sample), path("*.fasta"), emit: denovo
 
     script:
 
