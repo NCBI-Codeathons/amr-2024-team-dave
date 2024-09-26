@@ -57,13 +57,13 @@ process REMOVE_GUIDED {
     input:
         tuple val(sample), file(fasta)
     output:
-        tuple val(sample), path("*.fasta"), emit: denovo
+        tuple val(sample), path("./output/*_denovo.fasta"), emit: denovo
 
     script:
 
     """
-    mkdir ${sample}_output
-    python /home/amr-2024-team-dave/feature_gen_lib/main.py -m remove_guided -f ${fasta} -o ${sample}_output
+    mkdir output
+    python /home/amr-2024-team-dave/feature_gen_lib/main.py -m remove_guided -f ${fasta} -o output
     """
 }
 
