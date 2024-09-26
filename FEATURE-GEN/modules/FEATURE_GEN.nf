@@ -37,7 +37,7 @@ process FETCH_GENOME {
     container 'ebird013/feature_gen:0.1'
 
     input:
-        tuple val(sample), file(acc)
+        tuple val(sample), val(acc)
     output:
         tuple val(sample), path("./${sample}_output/*.gz"), emit: genome
 
