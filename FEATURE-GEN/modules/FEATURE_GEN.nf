@@ -5,13 +5,14 @@ process NUC_FEATURES {
     input:
         tuple val(sample), file(fasta)
     output:
-        tuple val(sample), path("./${sample}_output/*.csv"), emit: nuc_features
+        tuple val(sample), path("${sample}_nuc_feat.csv"), emit: nuc_features
 
     script:
 
     """
-    mkdir ${sample}_output
-    python /home/amr-2024-team-dave/feature_gen_lib/main.py -m nuc_feat -f ${fasta} -o ${sample}_output
+    mkdir output
+    python /home/amr-2024-team-dave/feature_gen_lib/main.py -m nuc_feat -f ${fasta} -o output
+    cp ./output/*.csv ./${sample}_nuc_feat.csv
     """
 }
 
@@ -22,13 +23,14 @@ process PRO_FEATURES {
     input:
         tuple val(sample), file(fasta)
     output:
-        tuple val(sample), path("./${sample}_output/*.csv"), emit: nuc_features
+        tuple val(sample), path("${sample}_aa_feat.csv"), emit: nuc_features
 
     script:
 
     """
-    mkdir ${sample}_output
-    python /home/amr-2024-team-dave/feature_gen_lib/main.py -m pro_feat -p ${fasta} -o ${sample}_output
+    mkdir output
+    python /home/amr-2024-team-dave/feature_gen_lib/main.py -m pro_feat -p ${fasta} -o output
+    cp ./output/*.csv ./${sample}_aa_feat.csv
     """
 }
 
