@@ -79,18 +79,8 @@ def genome_import_process(fasta):
     
     fasta_dict = read_fasta(fasta)  # Read the FASTA file and store sequences in a dictionary
 
-<<<<<<< HEAD
     fasta_dict = read_fasta(fasta)
 
     filtered_contigs = remove_guided_contigs(fasta_dict)
 
     return fasta, filtered_contigs
-
-=======
-    # Perform genome size check
-    if check_genome_size(fasta_dict, genome_size, skew):
-        print('Input sequence ' + fasta + ' passed checks')  # Inform the user if the sequence passes
-        return fasta, fasta_dict  # Return the FASTA file name and the sequence dictionary
-    else:
-        print('Input sequence ' + fasta + ' did not pass checks')  # Inform the user if the sequence fails
->>>>>>> main
