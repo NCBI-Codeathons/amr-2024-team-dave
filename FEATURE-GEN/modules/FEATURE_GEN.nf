@@ -1,6 +1,6 @@
 process NUC_FEATURES {
     label 'ultralow'
-    container 'ebird013/feature_gen:0.1'
+    container 'ebird013/feature_gen:0.2'
 
     input:
         tuple val(sample), file(fasta)
@@ -17,7 +17,7 @@ process NUC_FEATURES {
 
 process PRO_FEATURES {
     label 'ultralow'
-    container 'ebird013/feature_gen:0.1'
+    container 'ebird013/feature_gen:0.2'
 
     input:
         tuple val(sample), file(fasta)
@@ -34,7 +34,7 @@ process PRO_FEATURES {
 
 process FETCH_GENOME {
     label 'ultralow'
-    container 'ebird013/feature_gen:0.1'
+    container 'ebird013/feature_gen:0.2'
 
     input:
         tuple val(sample), val(acc)
@@ -51,7 +51,7 @@ process FETCH_GENOME {
 
 process REMOVE_GUIDED {
     label 'ultralow'
-    container 'ebird013/feature_gen:0.1'
+    container 'ebird013/feature_gen:0.2'
 
     input:
         tuple val(sample), file(fasta)
@@ -68,7 +68,7 @@ process REMOVE_GUIDED {
 
 process MUMMER_PARSE {
     label 'ultralow'
-    container 'ebird013/feature_gen:0.1'
+    container 'ebird013/feature_gen:0.2'
 
     input:
         tuple val(sample), file(mum_out)
@@ -84,7 +84,7 @@ process MUMMER_PARSE {
 
 process PROKKA_PARSE {
     label 'ultralow'
-    container 'ebird013/feature_gen:0.1'
+    container 'ebird013/feature_gen:0.2'
 
     input:
         tuple val(sample), file(pro_out)
