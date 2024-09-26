@@ -12,7 +12,7 @@ process PROKKA {
     script:
 
     """
-    prokka --outdir output--prefix ${sample} ${fasta} --cpus ${task.cpus} --centre X --compliant
+    prokka --outdir output --prefix ${sample} ${fasta} --cpus ${task.cpus} --centre X --compliant
     cp ./output/*.faa ./${sample}.faa
     cp ./output/*.txt ./${sample}.txt
     """
