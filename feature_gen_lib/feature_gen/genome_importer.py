@@ -7,11 +7,18 @@ def read_fasta(fasta):
     :param fasta: Path to the input FASTA file.
     :return: A dictionary where the keys are sequence IDs and values are the sequences.
     """
-    with open(fasta, "r") as fasta_file:  # Open the FASTA file for reading
-        fasta_dict = {}  # Initialize an empty dictionary to store sequences
-        for record in SeqIO.parse(fasta_file, "fasta"):  # Parse the FASTA file
-            fasta_dict[record.id] = record.seq  # Store sequence ID and sequence in the dictionary
-    return fasta_dict  # Return the populated dictionary
+    with open(fasta, "r") as fasta_file:
+        fasta_dict = {}
+        for record in SeqIO.parse(fasta_file, "fasta"):
+            fasta_dict[record.description] = record.seq
+    return fasta_dict
+
+def remove_guided_contigs(fasta_dict):
+    filter_contigs = {}
+    for seq in fasta_dict.keys():
+        if '.guided' not in seq:
+            filter_contigs[seq.split(' ')[0]] = fasta_dict[seq]
+    return filter_contigs
 
 def get_longest_record(fasta_dict):
     """
@@ -60,7 +67,7 @@ def check_genome_size(fasta_dict, genome_size, skew):
     else:
         return False  # Return False if genome size is outside the allowed range
 
-def genome_import_process(fasta, genome_size, skew):
+def genome_import_process(fasta):
     """
     Imports a FASTA file and checks whether the total genome size is within the allowable range.
     
@@ -72,9 +79,18 @@ def genome_import_process(fasta, genome_size, skew):
     
     fasta_dict = read_fasta(fasta)  # Read the FASTA file and store sequences in a dictionary
 
+<<<<<<< HEAD
+    fasta_dict = read_fasta(fasta)
+
+    filtered_contigs = remove_guided_contigs(fasta_dict)
+
+    return fasta, filtered_contigs
+
+=======
     # Perform genome size check
     if check_genome_size(fasta_dict, genome_size, skew):
         print('Input sequence ' + fasta + ' passed checks')  # Inform the user if the sequence passes
         return fasta, fasta_dict  # Return the FASTA file name and the sequence dictionary
     else:
         print('Input sequence ' + fasta + ' did not pass checks')  # Inform the user if the sequence fails
+>>>>>>> main

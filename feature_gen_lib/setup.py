@@ -1,6 +1,10 @@
 from setuptools import setup, find_packages
 
-# The 'setup' function is used to configure your package
+def parse_requirements(filename):
+    with open(filename, 'r') as file:
+        lines = file.readlines()
+        # Remove comments and empty lines
+        return [line.strip() for line in lines if line and not line.startswith("#")]
 setup(
     # The name of the package (or tool) that you're distributing
     name='feature_Generation_lib', 
@@ -31,8 +35,13 @@ setup(
             'feature-gen = feature_gen_lib.main:main',
         ],
     },
+<<<<<<< HEAD
+    install_requires=parse_requirements('requirements.txt')
+)
+=======
 
     # Dependencies required to run your package (optional)
     install_requires={  # List external libraries here, such as pandas, scikit-learn, or Biopython
     },
 )
+>>>>>>> main

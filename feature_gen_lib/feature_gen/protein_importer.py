@@ -15,5 +15,5 @@ def read_protein_fasta(fasta):
         fasta_dict = {}  # Initialize an empty dictionary to store the sequences
         # Parse the FASTA file and populate the dictionary with ID and sequence pairs
         for record in SeqIO.parse(fasta_file, "fasta"):
-            fasta_dict[record.id] = str(record.seq)  # Store the sequence as a string
-    return fasta_dict  # Return the dictionary containing all sequences
+            fasta_dict[record.id] = str(record.seq)  # Convert sequence to a string if needed
+    return fasta, fasta_dict

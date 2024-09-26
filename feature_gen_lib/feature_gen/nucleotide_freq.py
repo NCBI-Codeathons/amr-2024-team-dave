@@ -99,18 +99,9 @@ def count_trinucleotides(input_seq):
 
     return trinucleotide_counts  # Return the dictionary of trinucleotide counts
 
-def merge_dicts(dict1, dict2, dict3, dict4):
-    """
-    Merges four dictionaries into one.
-    
-    :param dict1: First dictionary.
-    :param dict2: Second dictionary.
-    :param dict3: Third dictionary.
-    :param dict4: Fourth dictionary.
-    :return: A merged dictionary.
-    """
-    merged_dict = {**dict1, **dict2, **dict3, **dict4}  # Merge all dictionaries into one
-    return merged_dict  # Return the merged dictionary
+def merge_dicts(dict1, dict2, dict3, dict4, dict5):
+    merged_dict = {**dict1, **dict2, **dict3, **dict4, **dict5}
+    return merged_dict
 
 def create_dir(dir_path):
     """
@@ -124,21 +115,13 @@ def create_dir(dir_path):
     except Exception as e:
         print(f"Error creating directory: {e}")  # Print error message if directory creation fails
 
-def create_db(import_sequence, output_folder):
-    """
-    Processes a sequence, counts nucleotides, dinucleotides, and trinucleotides, and
-    saves the results as a CSV file.
-    
-    :param import_sequence: Tuple with the input file name and a dictionary of sequences.
-    :param output_folder: Path to the output directory where the CSV will be saved.
-    :return: DataFrame containing nucleotide frequencies.
-    """
-    input_file = import_sequence[0]  # Extract the input file name
-    seq_dict = import_sequence[1]  # Extract the dictionary of sequences
-    space_seq = space_seperated_record(seq_dict)  # Concatenate sequences with space separation
+def create_db(sample_id, import_sequnce, output_folder):
+    input_file = import_sequnce[0]
+    seq_dict = import_sequnce[1]
+    space_seq = space_seperated_record(seq_dict)
 
     input_data = {}
-    input_data['file'] = import_sequence[0]  # Store the file name in the input data
+    input_data['sample_id'] = sample_id
 
     # Calculate GC content and nucleotide frequencies
     gc_content = get_gc_content(input_data)
@@ -146,8 +129,7 @@ def create_db(import_sequence, output_folder):
     dinuc_counts = count_dinucleotides(space_seq)
     trinuc_counts = count_trinucleotides(space_seq)
 
-    # Merge all calculated data into one dictionary
-    data = merge_dicts(input_data, nuc_counts, dinuc_counts, trinuc_counts)
+    data = merge_dicts(input_data, gc_content, nuc_counts, dinuc_counts, trinuc_counts)
 
     # Create a DataFrame with the merged data
     nuc_freq_df = pd.DataFrame(data, index=[0])
