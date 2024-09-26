@@ -39,13 +39,14 @@ process FETCH_GENOME {
     input:
         tuple val(sample), val(acc)
     output:
-        tuple val(sample), path("./output/*.gz"), emit: genome
+        tuple val(sample), path("${acc}.fasta.gz"), emit: genome
 
     script:
 
     """
     mkdir output
     python /home/amr-2024-team-dave/feature_gen_lib/main.py -m fetch -a ${acc} -e ${params.email} -o output
+    cp output/*.gz ./${acc}.fasta.gz
     """
 }
 
