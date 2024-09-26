@@ -76,12 +76,12 @@ def merge_dicts(dict1, dict2, dict3, dict4):
     merged_dict = {**dict1, **dict2, **dict3, **dict4}
     return merged_dict
 
-def create_db(protein_import, output_folder):
+def create_db(sample_id, protein_import, output_folder):
     input_file = protein_import[0]
     seq_dict = protein_import[1]
 
     input_data = {}
-    input_data['file'] = protein_import[0]
+    input_data['sample_id'] = sample_id
     aa_counts = count_aminoacids(seq_dict)
     di_aa_counts = count_diaminoacids(seq_dict)
     tri_aa_counts = count_triaminoacids(seq_dict)

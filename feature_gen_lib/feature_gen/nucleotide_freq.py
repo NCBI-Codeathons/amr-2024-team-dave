@@ -75,13 +75,13 @@ def create_dir(dir_path):
         print(f"Error creating directory: {e}")
 
 
-def create_db(import_sequnce, output_folder):
+def create_db(sample_id, import_sequnce, output_folder):
     input_file = import_sequnce[0]
     seq_dict = import_sequnce[1]
     space_seq = space_seperated_record(seq_dict)
 
     input_data = {}
-    input_data['file'] = import_sequnce[0]
+    input_data['sample_id'] = sample_id
 
     gc_content = get_gc_content(input_data)
     nuc_counts = count_nucleotides(space_seq)
