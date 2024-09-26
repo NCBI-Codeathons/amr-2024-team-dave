@@ -39,7 +39,7 @@ process FETCH_GENOME {
     input:
         tuple val(sample), val(acc)
     output:
-        tuple val(sample), path("./${sample}_output/*.gz"), emit: genome
+        tuple val(sample), path("./output/*.gz"), emit: genome
 
     script:
 
