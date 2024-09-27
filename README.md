@@ -22,6 +22,10 @@ Keywords: ESKAPE pathogens, Machine learning, Genomic data, Phenotypic data, Cli
 We collected isolates' accession ids and erd_groups from NCBI Isolate Browser. Based on erd_group that represents SNP cluster of each isolate, we chose isolates from all SNP clusters for each ESKAPE pathogen. Then processed our data by using PROKKA, gene annotation and Mummer, SNP-calling. We extracted some scoring features using Random Forest and Support Vector Machine (SVM) and calculated important sequence features and annotation features.
 From more than 340,000 isolates of ESKAP pathogens, we totally took 23,000 covering all of the SNP clusters for our training and tst datasets.
 
+![alt text](https://github.com/NCBI-Codeathons/amr-2024-team-dave/blob/main/Capture.PNG)
+
+![alt text](https://github.com/NCBI-Codeathons/amr-2024-team-dave/blob/main/3.PNG)
+
 ## Results
 Our pipeline extracted some features like sequence features for genomic and protein sequences, transcription fautres including coding sequences and mRNA, tRNA and rRNA contents.we will work more to connect these featres to phenotypic ones.
 
