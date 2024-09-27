@@ -3,17 +3,6 @@
 ESKAPE pathogens represent a significant cause of drug-resistant infections in healthcare settings. They exhibit high mutation rates and demonstrate significant resistance to multiple drugs. Early prediction of resistance patterns helps clinicians choose effective antibiotics, improving treatment and reducing resistance development.
 
 
-List of participants and affiliations:
-- Kirtan Dave (Team Leader), Assistant Professor in Bioinformatics Research and development cell  Parul University 
-- Narges SangaraniPour, Shahid Beheshti University of medical sciences 
-- Edward Bird , Kansas State University, Interdepartmental Genetics
-- Abolhassan Bahari , High Institute for Research and Education in Transfusion Medicine
-- William Boateng , Noguchi Memorial Institute for Medical Research
-- Chimenya Ntweya,Queen Elizabeth Central Hospital, Blantyre, Malawi
-- Priyal Visavadiya, Gujarat Biotechnology University, Gandhinagar
-- Precious Osadebamwen, Dalhousie University, Halifax, NS
-- Mohamed A. Abouelkhair, Associate professor and founding faculty Diagnostic Medicine and Pathobiology, Rowan University New Jersey USA
-
 
 
 
@@ -30,10 +19,27 @@ Keywords: ESKAPE pathogens, Machine learning, Genomic data, Phenotypic data, Cli
 ![Workflow Image](https://github.com/NCBI-Codeathons/amr-2024-team-dave/blob/main/genome/workflow_team_dave.JPG)
 
 
+We collected isolates' accession ids and erd_groups from NCBI Isolate Browser. Based on erd_group that represents SNP cluster of each isolate, we chose isolates from all SNP clusters for each ESKAPE pathogen. Then processed our data by using PROKKA, gene annotation and Mummer, SNP-calling. We extracted some scoring features using Random Forest and Support Vector Machine (SVM) and calculated important sequence features and annotation features.
+From more than 340,000 isolates of ESKAP pathogens, we totally took 23,000 covering all of the SNP clusters for our training and tst datasets.
 
 ## Results
+Our pipeline extracted some features like sequence features for genomic and protein sequences, transcription fautres including coding sequences and mRNA, tRNA and rRNA contents.we will work more to connect these featres to phenotypic ones.
+
 
 ## Future Work
+
+
+## Our Team
+
+- Kirtan Dave (Team Leader), Assistant Professor in Bioinformatics Research and development cell  Parul University 
+- Narges SangaraniPour, Shahid Beheshti University of medical sciences 
+- Edward Bird , Kansas State University, Interdepartmental Genetics
+- Abolhassan Bahari , High Institute for Research and Education in Transfusion Medicine
+- William Boateng , Noguchi Memorial Institute for Medical Research
+- Chimenya Ntweya,Queen Elizabeth Central Hospital, Blantyre, Malawi
+- Priyal Visavadiya, Gujarat Biotechnology University, Gandhinagar
+- Precious Osadebamwen, Dalhousie University, Halifax, NS
+- Mohamed A. Abouelkhair, Associate professor and founding faculty Diagnostic Medicine and Pathobiology, Rowan University New Jersey USA
 
 ## NCBI Codeathon Disclaimer
 This software was created as part of an NCBI codeathon, a hackathon-style event focused on rapid innovation. While we encourage you to explore and adapt this code, please be aware that NCBI does not provide ongoing support for it.
