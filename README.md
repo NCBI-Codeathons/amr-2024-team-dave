@@ -27,7 +27,7 @@ From more than 340,000 isolates of ESKAP pathogens, we totally took 23,000 cover
 ![alt text](https://github.com/NCBI-Codeathons/amr-2024-team-dave/blob/main/3.PNG)
 
 ## Results
-Our pipeline extracted some features like sequence features for genomic and protein sequences, transcription fautres including coding sequences and mRNA, tRNA and rRNA contents.we will work more to connect these featres to phenotypic ones.
+Our pipeline extracted some features like sequence features for genomic and protein sequences, transcription fautres including coding sequences and mRNA, tRNA and rRNA contents.we will work more to discover more correlations between these features and phenotypic attributes.
 
 
 ## Future Work
