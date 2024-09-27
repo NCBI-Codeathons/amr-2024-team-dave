@@ -45,11 +45,8 @@ Our pipeline extracted some features like sequence features for genomic and prot
 - Narges SangaraniPour, Shahid Beheshti University of medical sciences 
 - Edward Bird , Kansas State University, Interdepartmental Genetics
 - Abolhassan Bahari , High Institute for Research and Education in Transfusion Medicine
-- William Boateng , Noguchi Memorial Institute for Medical Research
-- Chimenya Ntweya,Queen Elizabeth Central Hospital, Blantyre, Malawi
 - Priyal Visavadiya, Gujarat Biotechnology University, Gandhinagar
 - Precious Osadebamwen, Dalhousie University, Halifax, NS
-- Mohamed A. Abouelkhair, Associate professor and founding faculty Diagnostic Medicine and Pathobiology, Rowan University New Jersey USA
 
   <img width="1440" alt="Screenshot 1403-07-06 at 18 58 28" src="https://github.com/user-attachments/assets/8d7ab937-cbcd-4afe-bea7-1fa8b5c03418">
 
