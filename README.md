@@ -18,6 +18,7 @@ Keywords: ESKAPE pathogens, Machine learning, Genomic data, Phenotypic data, Cli
 ![Workflow Image](https://github.com/NCBI-Codeathons/amr-2024-team-dave/blob/main/genome/workflow_team_dave.JPG)
 
 
+## Method
 We collected isolates' accession ids and erd_groups from NCBI Isolate Browser. Based on erd_group that represents SNP cluster of each isolate, we chose isolates from all SNP clusters for each ESKAPE pathogen. Then processed our data by using PROKKA, gene annotation and Mummer, SNP-calling. We extracted some scoring features using Random Forest and Support Vector Machine (SVM) and calculated important sequence features and annotation features.
 From more than 340,000 isolates of ESKAP pathogens, we totally took 23,000 covering all of the SNP clusters for our training and tst datasets.
 
