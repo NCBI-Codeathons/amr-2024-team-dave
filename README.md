@@ -1,6 +1,6 @@
 # E-GUARD
 
-ESKAPE pathogens represent a significant cause of drug-resistant infections in healthcare settings. exhibit high mutation rates and demonstrate significant resistance to multiple drugs. Early prediction of resistance patterns helps clinicians choose effective antibiotics, improving treatment and reducing resistance development.
+ESKAPE pathogens represent a significant cause of drug-resistant infections in healthcare settings. They exhibit high mutation rates and demonstrate significant resistance to multiple drugs. Early prediction of resistance patterns helps clinicians choose effective antibiotics, improving treatment and reducing resistance development.
 
 
 List of participants and affiliations:
