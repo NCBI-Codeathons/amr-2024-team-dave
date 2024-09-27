@@ -11,6 +11,8 @@
 
 
 
+
+
 ## Project Goals
 
 This project aimed to develop a machine learning model for rapid identification of ESKAPE pathogens, enhancing diagnostic capabilities and informing treatment strategies. The model will be trained on genomic and protein sequences, phenotypic and clinical data to predict phenotypic features and clinical outcomes from sample's genomic sequence. 
