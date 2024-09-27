@@ -1,5 +1,8 @@
 # E-GUARD
 
+ESKAPE pathogens represent a significant cause of drug-resistant infections in healthcare settings. exhibit high mutation rates and demonstrate significant resistance to multiple drugs. Early prediction of resistance patterns helps clinicians choose effective antibiotics, improving treatment and reducing resistance development.
+
+
 List of participants and affiliations:
 - Kirtan Dave (Team Leader), Assistant Professor in Bioinformatics Research and development cell  Parul University 
 - Narges SangaraniPour, Shahid Beheshti University of medical sciences 
@@ -17,7 +20,7 @@ List of participants and affiliations:
 
 ## Project Goals
 
-This project aims to develop a machine learning model for rapid identification of ESKAPE pathogens, enhancing diagnostic capabilities and informing treatment strategies. The model will be trained on genomic and protein sequences, phenotypic and clinical data to predict phenotypic features and clinical outcomes from sample's genomic sequence. 
+This project aimed to develop a machine learning model for rapid identification of ESKAPE pathogens, enhancing diagnostic capabilities and informing treatment strategies. The model will be trained on genomic and protein sequences, phenotypic and clinical data to predict phenotypic features and clinical outcomes from sample's genomic sequence. 
 
 Keywords: ESKAPE pathogens, Machine learning, Genomic data, Phenotypic data, Clinical data, Model development, Diagnostic tool, public health
 
