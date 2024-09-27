@@ -1,4 +1,4 @@
-# Team Project Name
+# E-GUARD
 
 List of participants and affiliations:
 - Kirtan Dave (Team Leader), Assistant Professor in Bioinformatics Research and development cell  Parul University 
