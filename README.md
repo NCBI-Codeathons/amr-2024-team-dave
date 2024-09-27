@@ -27,12 +27,12 @@ Our pipeline extracted some features like sequence features for genomic and prot
 
 
 ## Future Work
-Integrate AMR (Antimicrobial Resistance) pattern recognition using a CARD-like database.
-Enrich analysis with AMR gene data to develop comprehensive genetic resistance profiles.
-Enhance model capabilities for predicting resistance patterns.
-Expand research to include a broader range of pathogens for greater impact.
-Foster collaborations with other research teams and institutions to improve methodologies against AMR.
-Conduct more model validation using clinical samples to ensure robustness and accuracy.
+- Integrate AMR (Antimicrobial Resistance) pattern recognition using a CARD-like database.
+- Enrich analysis with AMR gene data to develop comprehensive genetic resistance profiles.
+- Enhance model capabilities for predicting resistance patterns.
+- Expand research to include a broader range of pathogens for greater impact.
+- Foster collaborations with other research teams and institutions to improve methodologies against AMR.
+- Conduct more model validation using clinical samples to ensure robustness and accuracy.
 
 
 ## Our Team
