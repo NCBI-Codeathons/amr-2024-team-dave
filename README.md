@@ -47,6 +47,9 @@ Our pipeline extracted some features like sequence features for genomic and prot
 - Precious Osadebamwen, Dalhousie University, Halifax, NS
 - Mohamed A. Abouelkhair, Associate professor and founding faculty Diagnostic Medicine and Pathobiology, Rowan University New Jersey USA
 
+  <img width="1440" alt="Screenshot 1403-07-06 at 18 58 28" src="https://github.com/user-attachments/assets/8d7ab937-cbcd-4afe-bea7-1fa8b5c03418">
+
+
 ## NCBI Codeathon Disclaimer
 This software was created as part of an NCBI codeathon, a hackathon-style event focused on rapid innovation. While we encourage you to explore and adapt this code, please be aware that NCBI does not provide ongoing support for it.
 
