@@ -17,7 +17,7 @@ List of participants and affiliations:
 
 ## Project Goals
 
-This project aims to develop a machine learning model for rapid identification of ESKAPE pathogens, enhancing diagnostic capabilities and informing treatment strategies. The model will be trained on genomic, phenotypic, and clinical data to improve accuracy and sensitivity.
+This project aims to develop a machine learning model for rapid identification of ESKAPE pathogens, enhancing diagnostic capabilities and informing treatment strategies. The model will be trained on genomic and protein sequences, phenotypic and clinical data to predict phenotypic features and clinical outcomes from sample's genomic sequence. 
 
 Keywords: ESKAPE pathogens, Machine learning, Genomic data, Phenotypic data, Clinical data, Model development, Diagnostic tool, public health
 
@@ -25,6 +25,7 @@ Keywords: ESKAPE pathogens, Machine learning, Genomic data, Phenotypic data, Cli
 
 ## Approach
 ![Workflow Image](https://github.com/NCBI-Codeathons/amr-2024-team-dave/blob/main/genome/workflow_team_dave.JPG)
+
 
 
 ## Results
