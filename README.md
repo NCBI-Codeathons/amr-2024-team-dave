@@ -41,12 +41,12 @@ Our pipeline extracted some features like sequence features for genomic and prot
 
 ## Our Team
 
-- Kirtan Dave (Team Leader), Assistant Professor in Bioinformatics Research and development cell  Parul University 
-- Narges SangaraniPour, Shahid Beheshti University of medical sciences 
-- Edward Bird , Kansas State University, Interdepartmental Genetics
-- Abolhassan Bahari , High Institute for Research and Education in Transfusion Medicine
-- Priyal Visavadiya, Gujarat Biotechnology University, Gandhinagar
-- Precious Osadebamwen, Dalhousie University, Halifax, NS
+- Kirtan Dave (Team Leader),  Parul University ,India
+- Narges SangaraniPour, Shahid Beheshti University of Medical sciences,Iran 
+- Edward Bird , Kansas State University, Interdepartmental Genetics, USA
+- Abolhassan Bahari , High Institute for Research and Education in Transfusion Medicine,Iran
+- Priyal Visavadiya, Gujarat Biotechnology University, Gandhinagar,India
+- Precious Osadebamwen, Dalhousie University, Halifax, Canada
 
   <img width="1440" alt="Screenshot 1403-07-06 at 18 58 28" src="https://github.com/user-attachments/assets/8d7ab937-cbcd-4afe-bea7-1fa8b5c03418">
 
